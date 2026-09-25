@@ -1,7 +1,5 @@
 
-/* ==============================
-   Design Tokens
-   ============================== */
+
 :root {
     /* Colors */
     --color-background: #fcffed;
@@ -17,7 +15,7 @@
     --font-size-xs: 0.875rem;
     --font-size-sm: 1rem;
     --font-size-m: 1.5rem;
-    --font-size-l: clamp(2rem, 1rem + 4vw, 3rem); /* 32px on phones, grows to 48px */
+    --font-size-l: clamp(2rem, 1rem + 4vw, 3rem);
 
     /* Line Height & Tracking */
     --line-height-body: 1.5;
@@ -68,7 +66,7 @@ img {
 body {
     min-height: 100vh;
     padding: var(--space-s);
-    /* Gingham background: one conic gradient tile, repeated */
+    /* Checkerboard background */
     background-color: var(--color-accent);
     background-image: repeating-conic-gradient(
         var(--color-accent) 0 25%,
@@ -84,7 +82,7 @@ body {
 h1,
 h2 {
     font-family: var(--font-display-title);
-    font-weight: 500; /* the only Jost weight loaded; prevents faux bold */
+    font-weight: 500;
     text-transform: uppercase;
     letter-spacing: var(--tracking-wide);
     line-height: 1.15;
@@ -138,7 +136,6 @@ input:focus-visible {
 
     .recipe-container {
         padding: var(--space-l);
-        /* Left column never shrinks below 16rem, so ingredients don't wrap into slivers */
         grid-template-columns: minmax(16rem, 1fr) 2fr;
         grid-template-areas:
             "header      header"
@@ -211,7 +208,7 @@ input:focus-visible {
     gap: var(--space-s);
 }
 
-/* --- Shared bordered list style --- */
+/* --- Shared list style --- */
 .ingredients-list,
 .instructions-list {
     border: var(--border);
@@ -222,12 +219,12 @@ input:focus-visible {
     border-top: var(--border);
 }
 
-/* --- Ingredients (checkable) --- */
+/* --- Ingredients --- */
 .ingredient label {
     display: flex;
     align-items: center;
     gap: var(--space-s);
-    min-height: 2.75rem; /* 44px touch target */
+    min-height: 2.75rem; 
     padding: var(--space-xs) var(--space-s);
     cursor: pointer;
 }
@@ -241,13 +238,13 @@ input:focus-visible {
     cursor: pointer;
 }
 
-/* Checked items are crossed off so you can see what's left */
+
 .ingredient label:has(input:checked) {
     background-color: var(--color-text-highlight);
     text-decoration: line-through;
 }
 
-/* --- Instructions (numbered circles) --- */
+/* --- Instructions --- */
 .instructions-list {
     counter-reset: step;
 }
@@ -262,7 +259,7 @@ input:focus-visible {
 
 .instruction-step::before {
     content: counter(step);
-    content: counter(step) / ""; /* hides the duplicate number from screen readers */
+    content: counter(step) / "";
     flex: 0 0 2rem;
     height: 2rem;
     display: flex;
