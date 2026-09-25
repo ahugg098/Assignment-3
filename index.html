@@ -3,37 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recipe Card Assignment - Make This Beautiful!</title>
+    <title>Classic Chocolate Chip Cookies</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;700&family=Jost:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="recipe-container">
+    <article class="recipe-container">
         <!-- Recipe Header Section -->
         <header class="recipe-header">
-            <h1 class="recipe-title">Classic Chocolate Chip Cookies</h1>
-            <img src="https://via.placeholder.com/300x200/8B4513/FFFFFF?text=Cookie+Photo" 
-                 alt="Golden brown chocolate chip cookies on a cooling rack" 
+            <h1 class="recipe-title">Classic Chocolate <br> Chip Cookies</h1>
+            <img src="chocochipcookies.png"
+                 alt="Close up of golden brown chocolate chip cookies catching the sunlight"
                  class="recipe-image">
         </header>
 
         <!-- Recipe Meta Information -->
-        <section class="recipe-meta">
-            <div class="meta-item">
-                <strong>Prep Time:</strong> 15 minutes
+        <dl class="recipe-meta">
+            <div class="meta-row">
+                <dt>Prep Time</dt>
+                <dd>15 minutes</dd>
             </div>
-            <div class="meta-item">
-                <strong>Cook Time:</strong> 12 minutes
+            <div class="meta-row">
+                <dt>Cook Time</dt>
+                <dd>12 minutes</dd>
             </div>
-            <div class="meta-item">
-                <strong>Total Time:</strong> 27 minutes
+            <div class="meta-row">
+                <dt>Total Time</dt>
+                <dd>27 minutes</dd>
             </div>
-            <div class="meta-item">
-                <strong>Servings:</strong> 24 cookies
+            <div class="meta-row">
+                <dt>Servings</dt>
+                <dd>24 cookies</dd>
             </div>
-            <div class="meta-item">
-                <strong>Difficulty:</strong> Easy
+            <div class="meta-row">
+                <dt>Difficulty</dt>
+                <dd>Easy</dd>
             </div>
-        </section>
+        </dl>
 
         <!-- Recipe Description -->
         <section class="recipe-description">
@@ -43,47 +52,97 @@
         <!-- Ingredients Section -->
         <section class="ingredients-section">
             <h2>Ingredients</h2>
-            <ul class="ingredients-list">
-                <li>2¼ cups all-purpose flour</li>
-                <li>1 teaspoon baking soda</li>
-                <li>1 teaspoon salt</li>
-                <li>1 cup (2 sticks) butter, softened</li>
-                <li>¾ cup granulated sugar</li>
-                <li>¾ cup packed brown sugar</li>
-                <li>2 large eggs</li>
-                <li>2 teaspoons vanilla extract</li>
-                <li>2 cups chocolate chips</li>
-                <li>1 cup chopped walnuts (optional)</li>
+            <ul class="ingredients-list" role="list">
+                <li class="ingredient">
+                    <label>
+                        <input type="checkbox">
+                        2¼ cups all-purpose flour
+                    </label>
+                </li>
+                <li class="ingredient">
+                    <label>
+                        <input type="checkbox">
+                        1 teaspoon baking soda
+                    </label>
+                </li>
+                <li class="ingredient">
+                    <label>
+                        <input type="checkbox">
+                        1 teaspoon salt
+                    </label>
+                </li>
+                <li class="ingredient">
+                    <label>
+                        <input type="checkbox">
+                        1 cup (2 sticks) butter, softened
+                    </label>
+                </li>
+                <li class="ingredient">
+                    <label>
+                        <input type="checkbox">
+                        ¾ cup granulated sugar
+                    </label>
+                </li>
+                <li class="ingredient">
+                    <label>
+                        <input type="checkbox">
+                        ¾ cup packed brown sugar
+                    </label>
+                </li>
+                <li class="ingredient">
+                    <label>
+                        <input type="checkbox">
+                        2 large eggs
+                    </label>
+                </li>
+                <li class="ingredient">
+                    <label>
+                        <input type="checkbox">
+                        2 teaspoons vanilla extract
+                    </label>
+                </li>
+                <li class="ingredient">
+                    <label>
+                        <input type="checkbox">
+                        2 cups chocolate chips
+                    </label>
+                </li>
+                <li class="ingredient">
+                    <label>
+                        <input type="checkbox">
+                        1 cup chopped walnuts (optional)
+                    </label>
+                </li>
             </ul>
         </section>
 
         <!-- Instructions Section -->
         <section class="instructions-section">
             <h2>Instructions</h2>
-            <ol class="instructions-list">
+            <ol class="instructions-list" role="list">
                 <li class="instruction-step">
-                    <strong>Preheat oven</strong> to 375°F (190°C). Line baking sheets with parchment paper.
+                    <p class="step-text"><strong>Preheat oven</strong> to 375°F (190°C). Line baking sheets with parchment paper.</p>
                 </li>
                 <li class="instruction-step">
-                    <strong>Mix dry ingredients:</strong> In a medium bowl, whisk together flour, baking soda, and salt. Set aside.
+                    <p class="step-text"><strong>Mix dry ingredients:</strong> In a medium bowl, whisk together flour, baking soda, and salt. Set aside.</p>
                 </li>
                 <li class="instruction-step">
-                    <strong>Cream butter and sugars:</strong> In a large bowl, beat softened butter with both sugars until light and fluffy, about 2-3 minutes.
+                    <p class="step-text"><strong>Cream butter and sugars:</strong> In a large bowl, beat softened butter with both sugars until light and fluffy, about 2-3 minutes.</p>
                 </li>
                 <li class="instruction-step">
-                    <strong>Add eggs and vanilla:</strong> Beat in eggs one at a time, then stir in vanilla extract.
+                    <p class="step-text"><strong>Add eggs and vanilla:</strong> Beat in eggs one at a time, then stir in vanilla extract.</p>
                 </li>
                 <li class="instruction-step">
-                    <strong>Combine wet and dry:</strong> Gradually blend in the flour mixture until just combined. Don't overmix.
+                    <p class="step-text"><strong>Combine wet and dry:</strong> Gradually blend in the flour mixture until just combined. Don't overmix.</p>
                 </li>
                 <li class="instruction-step">
-                    <strong>Fold in chocolate chips:</strong> Stir in chocolate chips and nuts (if using).
+                    <p class="step-text"><strong>Fold in chocolate chips:</strong> Stir in chocolate chips and nuts (if using).</p>
                 </li>
                 <li class="instruction-step">
-                    <strong>Shape and bake:</strong> Drop rounded tablespoons of dough onto prepared baking sheets, spacing 2 inches apart. Bake 9-11 minutes until golden brown.
+                    <p class="step-text"><strong>Shape and bake:</strong> Drop rounded tablespoons of dough onto prepared baking sheets, spacing 2 inches apart. Bake 9-11 minutes until golden brown.</p>
                 </li>
                 <li class="instruction-step">
-                    <strong>Cool:</strong> Let cool on baking sheet for 2 minutes, then transfer to wire rack.
+                    <p class="step-text"><strong>Cool:</strong> Let cool on baking sheet for 2 minutes, then transfer to wire rack.</p>
                 </li>
             </ol>
         </section>
@@ -91,29 +150,15 @@
         <!-- Recipe Footer -->
         <footer class="recipe-footer">
             <p>Recipe adapted from traditional family cookbook | Nutritional info: ~150 calories per cookie</p>
-            <p>Tags: dessert, baking, cookies, chocolate, family-friendly</p>
+            <h3 class="tag-heading">Tags:</h3>
+            <ul class="tag-list" role="list">
+                <li class="tag">dessert</li>
+                <li class="tag">baking</li>
+                <li class="tag">cookies</li>
+                <li class="tag">chocolate</li>
+                <li class="tag">family-friendly</li>
+            </ul>
         </footer>
-    </div>
-
-    <!-- Assignment Instructions (remove this section when styling) -->
-    <div style="background: white; border: 3px solid black; margin: 20px; padding: 20px; font-family: Arial;">
-        <h2>Your Assignment: Make This Recipe Card Beautiful!</h2>
-        <h3>Requirements:</h3>
-        <ul>
-            <li><strong>Use semantic HTML structure</strong> - the HTML is already properly structured with header, main sections, lists</li>
-            <li><strong>Implement responsive flexbox layouts</strong> - make it work on mobile and desktop</li>
-            <li><strong>Create visual hierarchy</strong> - use typography, spacing, and color to guide the user's eye</li>
-            <li><strong>Design for usability</strong> - this should be easy to follow while cooking</li>
-            <li><strong>Make it beautiful</strong> - choose cohesive colors, fonts, and spacing</li>
-        </ul>
-        <h3>Focus Areas:</h3>
-        <ul>
-            <li>Layout: Use flexbox for responsive design</li>
-            <li>Typography: Create clear information hierarchy</li>
-            <li>Color & Contrast: Ensure readability</li>
-            <li>Spacing: Use consistent margins and padding</li>
-            <li>Mobile-first: Design works on small screens</li>
-        </ul>
-    </div>
+    </article>
 </body>
 </html>
